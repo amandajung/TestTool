@@ -33,13 +33,14 @@ public class Destination {
 		this.distance = distance;
 	}
 
-	public int costTripToDestination() {
+	public int costTripToDestination(String transportation) {
 		int cost = 0;
-		if (getTransportation().equals("flight")) {
+		if (transportation.equals("flight")) {
 			cost = getDistance() * 50;
 		} else {
 			cost = getDistance() * 30;
 		}
+		System.out.println("Your trip to this destination will cost: " + cost + "SEK");
 		return cost;
 	}
 
