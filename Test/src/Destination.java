@@ -8,6 +8,13 @@ public class Destination {
 	public Destination() {
 
 	}
+	
+	public Destination(String city, String transportation, int distance) {
+		this.city = city;
+		this.transportation = transportation;
+		this.distance = distance;
+
+	}
 
 	public String getCity() {
 		return city;
@@ -33,12 +40,12 @@ public class Destination {
 		this.distance = distance;
 	}
 
-	public int costTripToDestination(String transportation) {
+	public int costTripToDestination() {
 		int cost = 0;
-		if (transportation.equals("flight")) {
-			cost = getDistance() * 50;
+		if (this.getTransportation().equals("flight")) {
+			cost = this.getDistance() * 50;
 		} else {
-			cost = getDistance() * 30;
+			cost = this.getDistance() * 30;
 		}
 		System.out.println("Your trip to this destination will cost: " + cost + "SEK");
 		return cost;
