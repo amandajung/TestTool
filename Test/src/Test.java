@@ -9,6 +9,8 @@ public class Test {
 		
 		Destination destination = new Destination("Miami", "car", 90);
 		destination.costTripToDestination();
+		
+		System.out.println("Where are you going?");
 	}
 
 }
