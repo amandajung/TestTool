@@ -7,7 +7,7 @@ public class Test {
 		System.out.println("Git git git");
 		System.out.println("Summer feeling");
 		
-		Destination destination = new Destination("Miami", "flight", 90);
+		Destination destination = new Destination("Miami", "car", 90);
 		destination.costTripToDestination();
 	}
 
