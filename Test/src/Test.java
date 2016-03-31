@@ -11,6 +11,7 @@ public class Test {
 		destination.costTripToDestination();
 		
 		System.out.println("Where are you going?");
+		System.out.println("To " + destination.getCity() + " of course :)");
 	}
 
 }
