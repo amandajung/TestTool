@@ -40,6 +40,7 @@ public class Destination {
 		} else {
 			cost = getDistance() * 30;
 		}
+		System.out.println("Your trip to this destination will cost: " + cost + "SEK");
 		return cost;
 	}
 
